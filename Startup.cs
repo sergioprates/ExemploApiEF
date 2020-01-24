@@ -39,7 +39,6 @@ namespace ExemploApiEF
         {
             services.AddControllers();
 
-
             services.AddDbContext<ContextoDb>(options =>
                         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
@@ -73,8 +72,8 @@ namespace ExemploApiEF
             services.AddSwaggerGen(options =>
             {
                 options.OperationFilter<SwaggerDefaultValues>();
-
             });
+
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ClienteRepositorio>();
             services.AddScoped<ClienteServico>();
