@@ -13,7 +13,7 @@ namespace ExemploApiEF.Dominio.Repositorio
             _unitOfWork = unitOfWork;
         }
 
-        public Cliente Inserir(Cliente entidade)
+        public virtual Cliente Inserir(Cliente entidade)
         {
             return _unitOfWork.ContextoApp.Set<Cliente>().Add(entidade).Entity;
         }

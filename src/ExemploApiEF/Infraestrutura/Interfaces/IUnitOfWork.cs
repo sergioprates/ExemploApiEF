@@ -7,7 +7,7 @@ namespace ExemploApiEF.Infraestrutura.Interfaces
     {
        ContextoDb ContextoApp { get; }
 
-        public void Dispose()
+        public new void Dispose()
         {
             throw new NotImplementedException();
         }

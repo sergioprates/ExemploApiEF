@@ -1,4 +1,3 @@
-using ExemploApiEF.Controllers;
 using ExemploApiEF.Dominio.Modelo;
 using ExemploApiEF.Dominio.Servicos;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +7,7 @@ namespace ExemploApiEF.Controllers
     [ApiController]
     [ApiVersion( "1.0" )]
     [ApiVersion( "2.0" )]
-    [Route( "api/v{version:apiVersion}/[controller]" )]
+    [Route( "v{version:apiVersion}/[controller]" )]
     public partial class ClienteController : ControllerBase
     {
         private ClienteServico _clienteServico;
