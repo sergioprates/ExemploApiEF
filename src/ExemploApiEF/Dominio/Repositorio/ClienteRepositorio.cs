@@ -15,7 +15,12 @@ namespace ExemploApiEF.Dominio.Repositorio
 
         public virtual Cliente Inserir(Cliente entidade)
         {
-            return _unitOfWork.ContextoApp.Set<Cliente>().Add(entidade).Entity;
+            return _unitOfWork.AplicacaoContextoApp.Set<Cliente>().Add(entidade).Entity;
+        }
+
+        public virtual Cliente Obter(int id)
+        {
+            return _unitOfWork.AplicacaoContextoApp.Set<Cliente>().Find(id);
         }
     }
 }

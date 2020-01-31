@@ -5,7 +5,7 @@ namespace ExemploApiEF.Infraestrutura.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-       ContextoDb ContextoApp { get; }
+       AplicacaoContexto AplicacaoContextoApp { get; }
 
         public new void Dispose()
         {
@@ -14,7 +14,7 @@ namespace ExemploApiEF.Infraestrutura.Interfaces
 
         public void Commit()
         {
-            ContextoApp.SaveChanges();
+            AplicacaoContextoApp.SaveChanges();
         }
     }
 }

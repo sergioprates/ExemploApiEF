@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ExemploApiEF.Migrations
 {
-    [DbContext(typeof(ContextoDb))]
+    [DbContext(typeof(AplicacaoContexto))]
     [Migration("20200123224205_InitialCreate")]
     partial class InitialCreate
     {

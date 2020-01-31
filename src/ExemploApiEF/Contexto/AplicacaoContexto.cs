@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ExemploApiEF.Contexto
 {
-    public class ContextoDb : DbContext
+    public class AplicacaoContexto : DbContext
     {
-        public ContextoDb(DbContextOptions<ContextoDb> options) : base(options)
+        public AplicacaoContexto(DbContextOptions<AplicacaoContexto> options) : base(options)
         {
         }
 

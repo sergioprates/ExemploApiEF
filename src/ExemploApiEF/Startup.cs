@@ -39,7 +39,7 @@ namespace ExemploApiEF
         {
             services.AddControllers();
 
-            services.AddDbContext<ContextoDb>(options =>
+            services.AddDbContext<AplicacaoContexto>(options =>
                         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();

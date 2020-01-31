@@ -5,21 +5,21 @@ namespace ExemploApiEF.Infraestrutura.Dados
 {
     public class UnitOfWork : IUnitOfWork
     {
-        public UnitOfWork(ContextoDb context)
+        public UnitOfWork(AplicacaoContexto context)
         {
-            ContextoApp = context;
+            AplicacaoContextoApp = context;
         }
 
-        public ContextoDb ContextoApp { get; }
+        public AplicacaoContexto AplicacaoContextoApp { get; }
 
         public void Commit()
         {
-            ContextoApp.SaveChanges();
+            AplicacaoContextoApp.SaveChanges();
         }
 
         public void Dispose()
         {
-            ContextoApp.Dispose();
+            AplicacaoContextoApp.Dispose();
         }
     }
 }

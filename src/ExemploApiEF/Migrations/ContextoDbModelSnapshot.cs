@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ExemploApiEF.Migrations
 {
-    [DbContext(typeof(ContextoDb))]
+    [DbContext(typeof(AplicacaoContexto))]
     partial class ContextoDbModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

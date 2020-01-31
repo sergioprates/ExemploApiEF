@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploApiEF.Api.Testes", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploApiEF.Testes", "tests\ExemploApiEF.Testes\ExemploApiEF.Testes.csproj", "{1B8AD610-4769-47BC-85B8-4C53FD31A0D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploApiEF.Integracao.Testes", "tests\ExemploApiEF.Integracao.Testes\ExemploApiEF.Integracao.Testes.csproj", "{EB4CCF8E-ACD0-4489-AE1D-29C5059195BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +31,15 @@ Global
 		{1B8AD610-4769-47BC-85B8-4C53FD31A0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B8AD610-4769-47BC-85B8-4C53FD31A0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B8AD610-4769-47BC-85B8-4C53FD31A0D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB4CCF8E-ACD0-4489-AE1D-29C5059195BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB4CCF8E-ACD0-4489-AE1D-29C5059195BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB4CCF8E-ACD0-4489-AE1D-29C5059195BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB4CCF8E-ACD0-4489-AE1D-29C5059195BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2BB5800B-07EE-4ADD-A43A-323CF8B6CA81} = {40BC4F33-A367-463A-83D0-893CB59D9DC8}
 		{067AAB83-3CB0-4DAF-8CC1-A6DBDAD83756} = {6D57AFDC-6052-4C12-8A9C-9FAF1F85E711}
 		{1B8AD610-4769-47BC-85B8-4C53FD31A0D4} = {6D57AFDC-6052-4C12-8A9C-9FAF1F85E711}
+		{EB4CCF8E-ACD0-4489-AE1D-29C5059195BA} = {6D57AFDC-6052-4C12-8A9C-9FAF1F85E711}
 	EndGlobalSection
 EndGlobal
